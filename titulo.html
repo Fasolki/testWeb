@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      background-color: #ffffff;
+      font-family: 'Arial', sans-serif;
+    }
+    h1 {
+      font-size: 32px;
+      text-align: center;
+      color: #333;
+      background-color: #7a3130;
+      padding: 20px 0;
+      margin: 0;      
+    }
+
+    @keyframes moveSideToSide {
+      from {
+        transform: translateX(-20px);
+      }
+      to {
+        transform: translateX(20px);
+      }
+    }
+    .nav-buttons {
+      text-align: right;
+      background-color: #8b3432;
+      margin-bottom: 10px;
+    }
+    .nav-buttons a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      font-size: 16px;
+      border: 2px solid #333;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background-color: #b5bebe;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .nav-buttons a:hover {
+      background-color: #333;
+      color: #fec987;
+    }
+    .moving-text {
+      display: inline-block;
+      animation: moveSideToSide 3s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <h1><span class="moving-text">Harkness Institute</span></h1>
+  <div class="nav-buttons">
+    <a href="Parcial2_Camila/index.html" target="_top">Inicio</a>
+    <a href="PROYECTO FINAL_Maya/nosotros.html" target="_top">Regresar</a>
+  </div>
+</body>
+</html>
